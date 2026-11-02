@@ -1,0 +1,662 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupid</title>
+    <link rel="icon" type="image/x-icon" href="IMG/icon.PNG">
+</head>
+<style>
+    :root {
+    --1-color: #fff2d8;
+    --7-color: #f2e9d4;
+    --2-color: #fccdd3;
+    --8-color: #fad6db;
+    --3-color: #fca2cf;
+    --4-color: #d8f4f6;
+    --5-color: #ade1eb;
+    --6-color: #2a3031;
+
+    }
+    body {
+    font-family: 'Andale Mono', monospace;
+    background-color: #ffb997;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000;   
+}
+
+.phone-screen {
+            width: 375px;
+            height: 667px;
+            margin: 0 auto;
+            background: rgb(255, 255, 255);
+            border-radius: 36px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Andale Mono', monospace;
+            display: flex;
+            flex-direction: column;
+        }
+
+.dark {
+    font-family: 'Andale Mono', monospace;
+    background-color: var(--2-color);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000;
+    
+}
+
+.dark-container {
+    font-family: 'Andale Mono', monospace;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--2-color);
+    color: var(--6-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 400px; 
+    font-weight: bold; 
+}
+
+
+h1 {
+    font-family: 'Andale Mono', monospace;
+    font-size: 28px;
+    font-weight: bold; 
+
+}
+p{
+    font-size: 20px;
+}
+
+p1{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.large-rectangular {
+    font-family: 'Andale Mono', monospace;
+    display: block;
+    width: 80%;
+    font-size: 20px;
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: var(--1-color);
+    color: var(--6-color);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.large-rectangular:hover {
+    background-color: #f7e6dd;
+    color: #000000;
+}
+
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: transparent;
+    display: none;
+    width: 90%; 
+    max-width: 400px; 
+}
+
+
+#quiz p{
+    font-size: 22px;
+    margin: 10px 0;
+
+}
+#result p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#quiz {
+    font-size: 24px;
+}
+
+#quiz img {
+    max-width: 100%;
+    max-height: 300px; 
+    display: block;
+    margin: auto; 
+    font-size: 24px;
+}
+
+question-image {
+    max-width: 360px;
+    height: auto;
+    align-items: center;
+    margin: 4px;
+}
+
+
+.result-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.result-text {
+    text-align: center;
+    font-size: 12px;
+}
+
+.result-text2 {
+    text-align: left;
+    font-size: 11px;
+}
+
+
+.result-image-container {
+    margin-top: 20px; 
+    text-align: center;
+    align-items: center;
+}
+
+.result-image img {
+    max-width: 360px;
+    height: auto;
+    align-items: center;
+    margin: 4px;
+    margin-top: 20px;
+}
+
+
+.start-button {
+    font-family: 'Andale Mono', monospace;
+    display: block;
+    width: 80%;
+    font-size: 20px;
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: #fff;
+    color: var(--6-color);
+    border: none;
+    border-radius:40px;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: var(--2-color); 
+    color: #090808;
+}
+
+
+
+.start-button2 {
+    font-family: 'Andale Mono', monospace;
+    display: block;
+    width: 80%;
+    font-size: 20px;
+    max-width: 400px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    background-color: var(--2-color);
+    color: var(--6-color);
+    border: none;
+    border-radius:40px;
+    cursor: pointer;
+}
+
+.start-button2:hover {
+    background-color: #fff; 
+    color: #090808;
+}
+
+
+
+.top-image {
+    width: 100%;
+    object-fit: cover; 
+}
+
+a {
+    font-size: 20px;
+    color: #4b2d2d;
+}
+
+a:hover {
+    color: #ffffff; 
+}
+
+
+a.no-underline {
+    color: #000000; 
+    text-decoration: none;
+}
+
+a.no-underline:hover {
+    color: #000000; 
+    text-decoration: none;
+}
+
+a.bright{
+    color:  #ffb997;
+}
+a.bright:hover {
+    color: #ffffff;
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.tooltip {
+    visibility: hidden;
+    width: 200px;
+    font-size: 10px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+.hover-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer a{
+    font-size: 10px;
+    text-decoration: none;
+    color: var(--8-color); 
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--3-color); 
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+  
+.top-image2 {
+    display: block;
+    width: 100%; 
+    height: auto; 
+}
+  
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; 
+}
+
+        .header {
+            height: 50px;
+            background-color: var(--5-color);
+            color: var(--6-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+</style>
+<body class = "dark">
+    <div class="dark-container">
+        <div class="start-page" id="start-page">
+            <div class="phone-screen" id="phone-screen"> 
+                <div class="header" id="header">Contact</div>
+                <br>
+                <br>
+                <img src="IMG/Heh/C0.png" alt="Profile Picture" class="profile-pic">
+                <h1>Cupid</h1>
+                <p1>mobile: ♥♥♥ ♥♥♥ ♥♥♥♥</p1>
+                <p1>Notes: Buuusy, donut en ter</p1>
+                <button id="start-button" class="start-button">Enter</button>
+            <br>
+            </div>
+        </div>
+    
+
+        <div class="quiz-page" id="quiz-page" style="display: none;">
+            <div id="quiz">
+            </div>
+            <div id="result" style="display: none;">
+                <p>You got....</p>
+                <div class="result-image">
+                    <img id="result-image" src="" alt="Result Image">
+                </div>
+                <br>
+                <div class="result-content">
+                    <div class="result-text"></div>
+                    <div class="result-text2"></div>
+                </div>
+            </div>
+    <!--debug-->
+    <div id="debug-box"
+        style="display: none; position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px; font-size: 12px; z-index: 999;">
+        <strong>Scores:</strong>
+        <pre id="debug-scores"></pre>
+    </div>
+            <footer>
+                <a href="https://iseej.github.io/Card/" target="_blank" style="font-size: 10px;">&copy; 2025 I-see Warisa Jaidee</a>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "...?!",
+                image: "IMG/Heh/C1.gif",
+                answers: {
+                    A: {
+                        text: "Oh...sorry",
+                        scores: { A: +1, B: 0, C: 0},
+                    },
+                    B: {
+                        text: "?!! Cupid?!!!",
+                        scores: { A: 0, B: +1, C: 0},
+                    },
+                    C: {
+                        text: "...?",
+                        scores: { A: 0, B: 0, C: +1},
+                    },
+                },
+            },
+            {
+                question: "'H..hey! Did you not read the notes?! I'm trying to work, you know?'",
+                image: "IMG/Heh/C2.gif",
+                answers: {
+                    C: {
+                        text: "Speaking of notes.. you also...",
+                        scores: { A: 0, B: 0, C: +1 },
+                    },
+                    B: {
+                        text: "Well I don't have other options...",
+                        scores: { A: 0, B: +1, C: 0 },
+                    },
+                    A: {
+                        text: "you're not working, you're eating chocolate!",
+                        scores: { A: +1, B: 0, C: 0 },
+                    },
+                },
+            },
+            {
+                question: "'ok ok, how about we both calm down. I ate chocolate, big deal, it's Valentine's Day!' the Cupid flies up and down 'What do you want, human?'",
+                image: "IMG/Heh/C3.gif",
+                answers: {
+                    A: {
+                        text: "Where did you get the chocolate from?",
+                        scores: { A: +1, B: 0, C: 0 },
+                    },
+                    B: {
+                        text: "Wait a minute, are those supposed to be MY Valentine's chocolate?!",
+                        scores:  { A: 0, B: +1, C: 0 },
+                    },
+                    C: {
+                        text: "I don't know, you tell me, what were YOU doing?",
+                        scores:  { A: 0, B: 0, C: +1 },
+                    },
+                },
+            },
+            {
+                question: "'Ok ok I'll explain myself, I got these from the Lost and Found box! I didn't steal it, I swear!'",
+                image:"IMG/Heh/C4.gif",
+                answers: {
+                    C: {
+                        text: "Sounds like stealing to me!",
+                        scores: { A: 0, B: 0, C: +1 },
+                    },
+                    B: {
+                        text: "So it did belong to someone huh?",
+                        scores: { A: 0, B: +1, C: 0 },
+                    },
+                    A: {
+                        text: "Are there more? I kinda want some",
+                        scores: { A: +1, B: 0, C: 0 },
+                    },
+                },
+            },
+            {
+                question: "'Urghh ok, come look' the Cupid opens the box 'there are plenty of things in here, withered bouquet, tears-soaked letters, a bunch of expired chocolates...things you humans throw away on Valentine's day'",
+                image: "IMG/Heh/C5.gif",
+                answers: {
+                    A: {
+                        text: "Sounds interesting...Can I take something?",
+                        scores: { A: +1, B: 0, C: 0 },
+                    },
+                    B: {
+                        text: "That's sickkk, I want one!",
+                        scores: { A: 0, B: +1, C: 0 },
+                    },
+                    C: {
+                        text: "Oh no, are there MY stuffs in there?",
+                        scores: { A: 0, B: 0, C: +1 },
+                    },
+                },
+            },
+            {
+                question: "'No! Humans are not supposed to be here, leave alone taking stuffs from the box!'",
+                image: "IMG/Heh/C6.gif",
+                answers: {
+                    C: {
+                        text: "I'll tell your boss you eat chocolate during work",
+                        scores:  { A: 0, B: 0, C: +1 },
+                    },
+                    B: {
+                        text: "I'm already here, what are you gonna do about it?",
+                        scores:  { A: 0, B: +1, C: 0 },
+                    },
+                    A: {
+                        text: "Pleaseeee it's Valentine's Day! Isn't it your job to make me happy?",
+                        scores:  { A: +1, B: 0, C: 0 },
+                    },
+                },
+            },
+            {
+                question: "'Urghhh fine, just...keep this a secret between us, alright?' the Cupid sighs 'Andddd...I get to choose what you can take, deal?'",
+                image: "IMG/Heh/C7.gif",
+                answers: {
+                    C: {
+                        text: "Deal!",
+                        scores: { A: 0, B: 0, C: +1 },
+                    },
+                    B: {
+                        text: "Why? that's unfair! I wanna choose",
+                        scores: { A: 0, B: +1, C: 0 },
+                    },
+                    A: {
+                        text: "oh of course you just want to hog all the chocolates!",
+                        scores: { A: +1, B: 0, C: 0 },
+                    }
+                },
+            },
+            {
+                question: "Before the Cupid says anything, one of the items jump out of the box and straight into your hand. The Cupid scoffs 'Hey, would you look at that, it choose you!'",
+                image: "IMG/Heh/C8.gif",
+                answers: {
+                    U: {
+                        text: "What is this thing...",
+                        scores: { A: 0, B: 0, C: 0 },
+                    }
+                },
+            },
+        ];
+        
+        const resultOptions = {
+            "A": {
+                text:`<p style="font-size:20px;">A Box of Assorted Chocolates<p><br>
+                A mix of sweet, rich, and surprising flavors, just like love itself. Some are delightful, some might be... well, questionable. But hey! that’s half the fun. 
+                Try your luck, pick and choose (wisely). Maybe you'll find something you absolutely love, something you're familiar with, or something that reminds you of someone...?`,
+                text2:`<br>Instructions:<br>
+                a) Just take a bite and see what happens<br>
+                b) Gained some superpower? Realizing your crush actually likes you back? Or just taste sour? If it’s the last one, well… that probably just means it expired. Just like some feelings that start to fade... ok sorry I'll stop
+                <br><br>Warnings: Consume within 7 days after opening—spoils fast!`,
+                image: "BA.png",
+            },
+            "B": {
+                text: `<p style="font-size:20px;">A Squishy Heart Toy<p><br>
+                A soft, squeezable heart—perfect for stress relief, dramatic hand gestures, or pretending you physically feel your emotions.
+                Whether you’re in love, frustrated, or just need something to squeeze while contemplating life, this little heart’s got you covered.
+                Squeeze it tight enough, and you'd hear it yelp words of affirmations to support you. <3`,
+                text2:`<br>Instructions:<br>
+                a) Squeeze it when you’re frustrated, in love, or just bored out of your mind<br>
+                b) Throw.. I mean give it to your crush cuz why not
+                <br><br>Warnings: Don't squeeze too hard, it'll sulk`,
+                image: "BB.png"
+            },
+            "C": {
+                text:`<p style="font-size:20px;">A Jar of Feelings<p><br>
+                A tiny glass jar filled with notes of everything you’ve been too shy (or too stubborn) to say.
+                Confessions, compliments, maybe even a few jokes you didn't get to crack. 
+                Each slip of paper is a little piece of what’s been left unsaid, waiting to be discovered. 
+                Ready to pick out one and read it out loud? Go for it, they're all yours.`,
+                text2: `<br>Instructions:<br>
+                a) Add one when you feel like it, whenever a thought goes unspoken, a feeling lingers, or you just want to leave a future surprise for yourself (or someone else)<br>
+                b) Open one when you need a reminder of how much you're loved (or when you just want a good laugh at your past self)
+                <br><br>Warnings:  If you cry while reading some of these (you will), don’t let the tears fall into the jar. The papers are delicate!`,
+                image: "BC.png"
+            },
+        };
+        
+        let currentQuestion = 0;
+        const scores = { A: 0, B: 0, C: 0 };
+        let userAnswers = {}; 
+        
+        function updateDebugScores() {
+            const debugScoresElement = document.getElementById('debug-scores');
+            const formattedScores = `
+        A: ${scores.A}, B: ${scores.B}, C: ${scores.C}`;
+            debugScoresElement.textContent = formattedScores.trim();
+        }
+        
+        function displayQuestion() {
+            const quizElement = document.getElementById('quiz');
+            const question = questions[currentQuestion];
+            if (question) {
+                let html = `<p>${question.question}</p>`;
+                if (question.image) {
+                    html += `<img src="${question.image}" alt="Question ${currentQuestion + 1}">`;
+                }
+                for (const option in question.answers) {
+                    html += `<button class="large-rectangular" value="${option}" id="${option}">${question.answers[option].text}</button>`;
+                }
+                quizElement.innerHTML = html;
+                attachButtonClickHandlers();
+            }
+        }
+        
+        document.getElementById('start-button').addEventListener('click', function() {
+            document.getElementById('start-page').style.display = 'none';
+            document.getElementById('quiz-page').style.display = 'block';
+            currentQuestion = 0;
+            userAnswers = {}; 
+            displayQuestion();
+        });
+        
+        function attachButtonClickHandlers() {
+            const choiceButtons = document.querySelectorAll('.large-rectangular');
+            choiceButtons.forEach((button) => {
+                button.addEventListener('click', handleAnswer);
+            });
+        }
+        
+        function handleAnswer(event) {
+            const selectedOption = event.target;
+            const answerKey = selectedOption.value;
+            const question = questions[currentQuestion];
+            const answer = question.answers[answerKey];
+            
+            
+            for (const dimension in answer.scores) {
+                scores[dimension] = (scores[dimension] || 0) + answer.scores[dimension];
+            }
+            updateDebugScores(); 
+        
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                displayQuestion();
+            } else {
+                showResult();
+            }
+        }
+        
+        function showResult() {
+            const resultElement = document.getElementById('result');
+            const resultTextContainer = document.querySelector('.result-text');
+            const resultTextContainer2 = document.querySelector('.result-text2');
+            const resultImage = document.getElementById('result-image');
+        
+            let result = '';
+            let topscore = [];
+            if (scores.A >= scores.B && scores.A >= scores.C) topscore.push('A');
+            if (scores.B >= scores.A && scores.B >= scores.C) topscore.push('B');
+            if (scores.C >= scores.A && scores.C >= scores.B) topscore.push('C');
+            result = topscore[Math.floor(Math.random() * topscore.length)];
+        
+            const personalityData = resultOptions[result];
+            if (personalityData) {
+                resultTextContainer.innerHTML = `${personalityData.text}`;
+                resultTextContainer2.innerHTML = `${personalityData.text2}`;
+                resultImage.src = "IMG/Heh/" + personalityData.image;
+                resultImage.alt = `${personalityData.image} Image`;
+            }
+        
+            document.getElementById('quiz').style.display = 'none';
+            resultElement.style.display = 'block';
+        }
+        
+        function restartQuiz() {
+            currentQuestion = 0;
+            userAnswers = {};
+            document.getElementById('result').style.display = 'none';
+            document.getElementById('quiz').style.display = 'block';
+            displayQuestion();
+        }
+        
+        document.getElementById('restart-button').addEventListener('click', restartQuiz);
+        
+        displayQuestion();
+        </script>
+        <script src="script.js"></script>
+
+</body>
+</html>
