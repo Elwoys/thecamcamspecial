@@ -77,8 +77,8 @@ const dialogue = [
         speaker: 'bot',
         text: ["*Vous venez de recevoir une notification*"],
         choices: [
-            { id: 1, text: '*Open*', type: 'A', weight: 2, next: 2, followUpText: [] },
-            { id: 2, text: '*Ignore it*', type: 'R', weight: 2, next: 1, followUpText: [] },
+            { id: 1, text: "Ouvrir", type: 'A', weight: 2, next: 2, followUpText: [] },
+            { id: 2, text: "Ignorer", type: 'R', weight: 2, next: 1, followUpText: [] },
             /*{ id: 2, text: 'DEBUG', type: 'O', weight: 0, next: 100, followUpText: [] },*/
         ]
     },
@@ -93,7 +93,7 @@ const dialogue = [
     // 2 (2)
     {
         speaker: 'bot',
-        text: ["Coucou Camille ! J'ai entendu dire qu'aujourd'hui était une journée spéciale pour toi :D"],
+        text: ["Coucou Camille ! J'ai entendu dire qu'ajd était une journée spéciale pour toi :D"],
         choices: [
             { id: 1, text: "Désolée, mauvais numéro...", type: 'B', weight: 2, next: 3, followUpText: [] },
             { id: 2, text: "Et vous êtes ??", type: 'S', weight: 2, next: 4, followUpText: [] },
