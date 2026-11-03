@@ -75,7 +75,7 @@ const dialogue = [
     // 0 (0)
     {
         speaker: 'bot',
-        text: ["*New notification from Unknown*"],
+        text: ["*Vous venez de recevoir une notification*"],
         choices: [
             { id: 1, text: '*Open*', type: 'A', weight: 2, next: 2, followUpText: [] },
             { id: 2, text: '*Ignore it*', type: 'R', weight: 2, next: 1, followUpText: [] },
@@ -85,61 +85,61 @@ const dialogue = [
     // 1
     {
         speaker: 'bot',
-        text: ['*Are you sure? It could be important!*'],
+        text: ['*Êtes-vous sûre ? Ca pourrait être important*'],
         choices: [
-            { id: 1, text: 'FINE I\'ll open it', type: 'O', weight: 1, next: 2, followUpText: [] },
+            { id: 1, text: 'Bon okay, je vais l'ouvrir...', type: 'O', weight: 1, next: 2, followUpText: [] },
         ]
     },
     // 2 (2)
     {
         speaker: 'bot',
-        text: ['Hey hey hey! Happy Valentine\'s Day!'],
+        text: ['Heeeey ! J'ai entendu dire qu'aujourd'hui était une journée spéciale pour toi :D'],
         choices: [
-            { id: 1, text: 'I think you got the wrong number', type: 'B', weight: 2, next: 3, followUpText: [] },
-            { id: 2, text: 'Thanks, but who r u?', type: 'S', weight: 2, next: 4, followUpText: [] },
-            { id: 3, text: '*don\'t reply, it could be a scam!*', type: 'W', weight: 2, next: 5, followUpText: [] },
+            { id: 1, text: 'Désolée, mauvais numéro...', type: 'B', weight: 2, next: 3, followUpText: [] },
+            { id: 2, text: 'Et vous êtes ??', type: 'S', weight: 2, next: 4, followUpText: [] },
+            { id: 3, text: '*ma maman m'a appris à ignorer les arnaqueurs, et c'en est clairement un*', type: 'W', weight: 2, next: 5, followUpText: [] },
         ]
     },
 
     // 3 (3_1)
     {
         speaker: 'bot',
-        text: ['Wrong number?! Pfftt that\'s not possible', "You summoned me afterall...","You're the one playing this quiz on Valentine's Day!"],
+        text: ['Mauvais numéro ?', "Mais c'est clairement toi qui fait appel à moi, voyons !!"],
         choices: [
-            { id: 1, text: 'Summoned you?', type: 'G', weight: 1, next: 6, followUpText: [] },
-            { id: 2, text: 'lol idk what ur talking abt', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'Who are you?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 1, text: 'Faire appel à toi ??', type: 'G', weight: 1, next: 6, followUpText: [] },
+            { id: 2, text: 'Oui oui, et les vaches ça vole...', type: 'P', weight: 1, next: 6, followUpText: [] },
+            { id: 3, text: 'Mais du coup t'es qui ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
     // 4 (3_2)
     {
         speaker: 'bot',
-        text: ['Me? You know me!', 'You summoned me just now.', "Wasn't it you who want to play this quiz on Valentine's Day?"],
+        text: ['Moi ? Mais tu me connais déjà !', 'C'est toi qui viens de faire appel à moi', "C'est bien toi qui a voulu faire ce test aujourd'hui, non ?"],
         choices: [
-            { id: 1, text: 'Summoned you?', type: 'G', weight: 1, next: 6, followUpText: [] },
-            { id: 2, text: 'lol idk what ur talking abt', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'No srly! Who are you?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 1, text: 'Faire appel à toi ?', type: 'G', weight: 1, next: 6, followUpText: [] },
+            { id: 2, text: 'Mais de quoi tu parles...', type: 'P', weight: 1, next: 6, followUpText: [] },
+            { id: 3, text: 'Nan mais sérieux, t'es qui ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
     // 5 (3_3)
     {
         speaker: 'bot',
-        text: ["Oh don't ignore me", "You're the one who summoned me!", "Didn't you want to play this quiz on Valentine's Day?"],
+        text: ["Hey, ne m'ignore pas !", "Je sais que tu as vu mes messages !!", "C'est toi qui a fait appel à moi pourtant :("],
         choices: [
-            { id: 1, text: 'Summoned you?', type: 'G', weight: 1, next: 6, followUpText: [] },
-            { id: 2, text: 'lol idk what ur talking abt', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'Who are you?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 1, text: 'Faire appel à toi ?', type: 'G', weight: 1, next: 6, followUpText: [] },
+            { id: 2, text: 'Mais de quoi tu parles...', type: 'P', weight: 1, next: 6, followUpText: [] },
+            { id: 3, text: 'Vous êtes qui même ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
 
     // 6 (4)
     {
         speaker: 'bot',
-        text: ["Ok ok, I'll explain everything", "I'm your personal Cupid!", "Your love life is my job!!"],
+        text: ["Ok ok, laisse-moi tout t'expliquer !", "Moi c'est Bibi, une birthday bee !", "Et mon rôle aujourd'hui c'est d'animer un peu cette journée si spéciale pour toi !!"],
         choices: [
-            { id: 1, text: "Oh really? Clearly you need to work harder", type: 'P', weight: 2, next: 7, followUpText: [] },
-            { id: 2, text: "Ok Cupid, what do you want?", type: 'G', weight: 2, next: 8, followUpText: [] },
-            { id: 3, text: "I thought this was just a personality quiz...", type: 'D', weight: 2, next: 8, followUpText: [] },
+            { id: 1, text: "Et depuis quand les abeilles animent des anniversaires même...", type: 'P', weight: 2, next: 7, followUpText: [] },
+            { id: 2, text: "Ok Bibi, et comment tu vas t'y prendre ?", type: 'G', weight: 2, next: 8, followUpText: [] },
+            { id: 3, text: "On peut abréger là ? Ca devient long...", type: 'D', weight: 2, next: 9, followUpText: [] },
 
         ]
     },
@@ -147,29 +147,29 @@ const dialogue = [
     // 7 (5_1)
     {
         speaker: 'bot',
-        text: ["Ouch! I'm trying my best here!", "Anyways, I'm here to ask you 12 questions", "Cupid's duty! We do this once a year!"],
+        text: ["Ah bah les temps sont durs pour tout le monde, hein", "Moi aussi j'ai une famille à nourrir !", "(Et des achats compulsifs à faire, mais chut)", "Enfin bref, j'aurais 12 questions à te poser", "Partante ?"],
         choices: [
-            { id: 1, text: "Fine, I'll do it", type: 'R', weight: 1, next: 10, followUpText: [] },
-            { id: 2, text: "Sounds fun, I'm down!", type: 'A', weight: 1, next: 10, followUpText: ["Hopefully this helps improve your Cupid performance!"] },
+            { id: 1, text: "Si tu insistes...", type: 'R', weight: 1, next: 10, followUpText: [] },
+            { id: 2, text: "Tu me fais un peu pitié donc j'accepte.", type: 'A', weight: 1, next: 10, followUpText: ["J'espère pour toi que t'es bien payé pour le coup"] },
         ]
     },
-    // 8 (5_2, 5_3)
+    // 8 (5_2)
     {
         speaker: 'bot',
-        text: ["Straight to the point, I see", "I'm here to ask you 12 questions", "Cupid's duty! We do this once a year!"],
+        text: ["Avec un petit quiz tout simple !", "J'ai 12 questions à te poser", "Partante ?"],
         choices: [
-            { id: 1, text: "Ok", type: 'R', weight: 1, next: 10, followUpText: [] },
-            { id: 2, text: "Sounds fun, I'm down!", type: 'A', weight: 1, next: 10, followUpText: [] },
+            { id: 1, text: "Allez, pourquoi pas", type: 'R', weight: 1, next: 10, followUpText: [] },
+            { id: 2, text: "J'avoue être un peu curieuse maintenant, on peut démarrer oui", type: 'A', weight: 1, next: 10, followUpText: [] },
         ]
     },
 
 
-    // 9 (6)
+    // 9 (5_3)
     {
         speaker: 'bot',
-        text: ["There will be 12 questions!", "Ready?"],
+        text: ["C'est que Madame est une busy bee !", "J'aurai juste 12 questions à te poser", "Partante ?"],
         choices: [
-            { id: 1, text: "Alright, ask away!", type: 'O', weight: 0, next: 10, followUpText: [] },
+            { id: 1, text: "Allez, pourquoi pas", type: 'O', weight: 0, next: 10, followUpText: [] },
             { id: 2, text: "I was born ready!", type: 'O', weight: 0, next: 10, followUpText: [] },
             { id: 3, text: "Let's gooo", type: 'O', weight: 0, next: 10, followUpText: [] },
         ]
