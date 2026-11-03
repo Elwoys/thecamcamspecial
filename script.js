@@ -85,40 +85,40 @@ const dialogue = [
     // 1
     {
         speaker: 'bot',
-        text: ['*Êtes-vous sûre ? Ca pourrait être important*'],
+        text: ["*Êtes-vous sûre ? Ca pourrait être important*"],
         choices: [
-            { id: 1, text: 'Bon okay, je vais l'ouvrir...', type: 'O', weight: 1, next: 2, followUpText: [] },
+            { id: 1, text: "Bon okay, je vais l'ouvrir...", type: 'O', weight: 1, next: 2, followUpText: [] },
         ]
     },
     // 2 (2)
     {
         speaker: 'bot',
-        text: ['Coucou Camille ! J'ai entendu dire qu'aujourd'hui était une journée spéciale pour toi :D'],
+        text: ["Coucou Camille ! J'ai entendu dire qu'aujourd'hui était une journée spéciale pour toi :D"],
         choices: [
-            { id: 1, text: 'Désolée, mauvais numéro...', type: 'B', weight: 2, next: 3, followUpText: [] },
-            { id: 2, text: 'Et vous êtes ??', type: 'S', weight: 2, next: 4, followUpText: [] },
-            { id: 3, text: '*ma maman m'a appris à ignorer les arnaqueurs, et c'en est clairement un*', type: 'W', weight: 2, next: 5, followUpText: [] },
+            { id: 1, text: "Désolée, mauvais numéro...", type: 'B', weight: 2, next: 3, followUpText: [] },
+            { id: 2, text: "Et vous êtes ??", type: 'S', weight: 2, next: 4, followUpText: [] },
+            { id: 3, text: "*ma maman m'a appris à ignorer les arnaqueurs, et c'en est clairement un*", type: 'W', weight: 2, next: 5, followUpText: [] },
         ]
     },
 
     // 3 (3_1)
     {
         speaker: 'bot',
-        text: ['Mauvais numéro ?', "Je connais aucune autre Camille perso !", "En plus c'est toi qui fait appel à moi !!"],
+        text: ["Mauvais numéro ?", "Je connais aucune autre Camille perso !", "En plus c'est toi qui fait appel à moi !!"],
         choices: [
-            { id: 1, text: 'Faire appel à toi ??', type: 'G', weight: 1, next: 6, followUpText: [] },
-            { id: 2, text: 'Oui oui, et les vaches ça vole...', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'Okay mais du coup t'es qui ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 1, text: "Faire appel à toi ??", type: 'G', weight: 1, next: 6, followUpText: [] },
+            { id: 2, text: "Oui oui, et les vaches ça vole...", type: 'P', weight: 1, next: 6, followUpText: [] },
+            { id: 3, text: "Okay mais du coup t'es qui ?!", type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
     // 4 (3_2)
     {
         speaker: 'bot',
-        text: ['Moi ? Mais tu me connais déjà !', 'C'est toi qui viens de faire appel à moi', "C'est bien toi qui a voulu faire ce test aujourd'hui, non ?"],
+        text: ["Moi ? Mais tu me connais déjà !", "C'est toi qui viens de faire appel à moi", "C'est bien toi qui a voulu faire ce test aujourd'hui, non ?"],
         choices: [
-            { id: 1, text: 'Faire appel à toi ?', type: 'G', weight: 1, next: 6, followUpText: [] },
-            { id: 2, text: 'Mais de quoi tu parles...', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'Et donc t'es qui au juste ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 1, text: "Faire appel à toi ?", type: 'G', weight: 1, next: 6, followUpText: [] },
+            { id: 2, text: "Mais de quoi tu parles...", type: 'P', weight: 1, next: 6, followUpText: [] },
+            { id: 3, text: "Et donc t'es qui au juste ?!", type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
     // 5 (3_3)
@@ -126,9 +126,9 @@ const dialogue = [
         speaker: 'bot',
         text: ["Eh, ne m'ignore pas !", "Je sais que tu as vu mes messages !!", "C'est toi qui a fait appel à moi pourtant :("],
         choices: [
-            { id: 1, text: 'Faire appel à toi ?', type: 'G', weight: 1, next: 6, followUpText: [] },
-            { id: 2, text: 'Mais de quoi tu parles...', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'T'es qui même ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 1, text: "Faire appel à toi ?", type: 'G', weight: 1, next: 6, followUpText: [] },
+            { id: 2, text: "Mais de quoi tu parles...", type: 'P', weight: 1, next: 6, followUpText: [] },
+            { id: 3, text: "T'es qui même ?!", type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
 
