@@ -135,7 +135,7 @@ const dialogue = [
     // 6 (4)
     {
         speaker: 'bot',
-        text: ["Laisse-moi tout t'expliquer !", "Moi c'est Bibi, une birthday bee !", "Et mon rôle aujourd'hui c'est d'animer un peu cette journée si spéciale pour toi !!"],
+        text: ["Laisse-moi t'expliquer !", "Moi c'est Bibi, une birthday bee !", "Et mon rôle aujourd'hui c'est d'animer un peu cette journée si spéciale pour toi !!"],
         choices: [
             { id: 1, text: "Et depuis quand les abeilles animent des anniversaires même...", type: 'P', weight: 2, next: 7, followUpText: [] },
             { id: 2, text: "Okay Bibi, et comment tu comptes t'y prendre ?", type: 'G', weight: 2, next: 8, followUpText: [] },
@@ -215,51 +215,55 @@ const dialogue = [
             { id: 5, text: "Toutes les personnes dont j'apprécie la compagnie, plus on est de fous, plus on rit !!", type: 'B', type2: 'S', weight: 1, next: 13, followUpText: [] },
         ]
     },
-    // 13 (Q4_3,4)
+    // 13 (Q3)
     {
         speaker: 'bot',
-        text: ["lol I'd do that, too!", "While we're just sitting and waiting...", "4) What kind of dates excite you the most?"],
+        text: ["Parfait !", "3) Comment décrirais-tu le type de célébration que tu souhaiterais avoir ?"],
         choices: [
-            { id: 1, text: "Chill and relaxed, where we can spend time together", type: 'G', weight: 2, next: 15, followUpText: [] },
-            { id: 2, text: "Fun and spontaneous, loaded with beautiful memories", type: 'P', weight: 2, next: 16, followUpText: [] },
-            { id: 3, text: "Sweet and intimate, showering each other with affections", type: 'D', weight: 2, next: 17, followUpText: [] },
-        ]
-    },
-    // 14 (Q4_1,2,5)
-    {
-        speaker: 'bot',
-        text: ["Aww, I love the spirit!!", "Being bold might just secure you a date!", "4) What kind of dates excite you the most?"],
-        choices: [
-            { id: 1, text: "Chill and relaxed, where we can spend time together", type: 'G', weight: 2, next: 15, followUpText: [] },
-            { id: 2, text: "Fun and spontaneous, a lot of cute moments together!", type: 'P', weight: 2, next: 16, followUpText: [] },
-            { id: 3, text: "Sweet and intimate, cherishing each other’s company", type: 'D', weight: 2, next: 17, followUpText: [] },
+            { id: 1, text: "Simple et réconfortant, juste quelque chose qui me ferait passer un bon moment avec mes gens préférés !", type: 'G', weight: 2, next: 14, followUpText: [] },
+            { id: 2, text: "Fun et festif, je déborde d'énergie !", type: 'P', weight: 2, next: 15, followUpText: [] },
+            { id: 3, text: "Unique et inhabituel, c'est l'occasion de faire quelque chose de spécial !", type: 'D', weight: 2, next: 16, followUpText: [] },
         ]
     },
 
-    // 15 (Q5_1C)
+    
+    // 14 (Q4_1)
     {
         speaker: 'bot',
-        text: ["Going for the comfortable vibes, I see", "5) Any idea what might that be?"],
+        text: ["C'est ce que j'aurais choisi aussi !" "4) Et qu'est-ce que tu voudrais faire plus exactement ?"],
         choices: [
-            { id: 1, text: "Bookstores - pick a book for each other!", type: 'R', weight: 2, next: 18, followUpText: [] },
-            { id: 2, text: "Gym - friendly sports challenge to strengthen our bond", type: 'A', weight: 2, next: 18, followUpText: ["Loser gets a hug. win-win!"] },
-            { id: 3, text: "Park - picnic date and some boat paddling", type: 'A', weight: 2, next: 18, followUpText: [] },
-            { id: 4, text: "Home - cooking our favorite dish", type: 'R', weight: 2, next: 18, followUpText: ["A way to one's heart is through their stomach!"] },
-            { id: 5, text: "Planetarium - traveling the universe while holding hands", type: 'A', type2: 'R', weight: 1, next: 18, followUpText: ["Plus, I get to geek out on the space stuffs!"] },
+            { id: 1, text: "Une journée détente, juste à papoter et rigoler avec mes personnes préférées !", type: 'R', weight: 2, next: 17, followUpText: ["L'important c'est pas ce que l'on fait, c'est avec qui on est !"] },
+            { id: 2, text: "Une soirée bar à jeux !", type: 'A', weight: 2, next: 17, followUpText: [] },
+            { id: 3, text: "Une après-midi shopping avec des proches !", type: 'A', weight: 2, next: 17, followUpText: ["Occasion parfaite de me faire payer des choses hehe #rat"] },
+            { id: 4, text: "Cuisiner et faire des loisirs créatifs avec mes proches", type: 'R', weight: 2, next: 17, followUpText: ["(Dans le confort de l'appart de Nico !)"] },
         ]
     },
-    // 16 (Q5_2P)
+
+    // 15 (Q4_2)
     {
         speaker: 'bot',
-        text: ["Exciting! you're up for some surprises, I see", "5) Any idea what might that be?"],
+        text: ["C'est une bonne chose !", "4) Et qu'est-ce que tu voudrais faire plus exactement ?"],
         choices: [
-            { id: 1, text: "Aquarium - exploring sea lives while holding hands", type: 'R', weight: 2, next: 18, followUpText: [] },
-            { id: 2, text: "Karaoke - singing our hearts out", type: 'A', weight: 2, next: 18, followUpText: ["My favorite tune is the sound of their heartbeat <3"] },
-            { id: 3, text: "Art museum - peaceful stroll with beautiful backdrops", type: 'A', type2: 'R', weight: 1, next: 18, followUpText: ["Good way to prove that they are the most beautiful work of art"] },
-            { id: 4, text: "Amusement park - ferris wheel and roller coasters, yippieee", type: 'A', weight: 2, next: 18, followUpText: [] },
-            { id: 5, text: "My sofa - cuddling and watching movies", type: 'R', weight: 2, next: 18, followUpText: [] },
+            { id: 1, text: "Direction boîte de nuit, je veux danser !!!!", type: 'R', weight: 2, next: 17, followUpText: ["Marine serait sûrement partante aussi, vu le nombre de fois où elle nous en parle !"] },
+            { id: 2, text: "Un karaoké, je suis prête à délivrer la performance d'une vie !", type: 'A', weight: 2, next: 17, followUpText: ["(Qu'Anaïs ma partenaire de chant s'échauffe la voix aussi, ce soir ça va chanter !)"] },
+            { id: 3, text: "Boire un verre au bar !", type: 'A', weight: 2, next: 17, followUpText: ["Simple, mais efficace pour se retrouver ensemble !"] },
+            { id: 4, text: "Home - cooking our favorite dish", type: 'R', weight: 2, next: 17, followUpText: ["A way to one's heart is through their stomach!"] },
         ]
     },
+    
+    // 16 (Q4_3)
+    {
+        speaker: 'bot',
+        text: ["Quelque chose qui change hein ? J'adore !", "4) Et qu'est-ce que tu voudrais faire plus exactement ?"],
+        choices: [
+            { id: 1, text: "Une escapade dans une autre ville le temps d'un week-end !", type: 'R', weight: 2, next: 17, followUpText: ["C'est peut-être l'occasion de rendre visite à Marie à Londres, non ?"] },
+            { id: 2, text: "Avoir une fête d'anniversaire surprise organisée par mes proches", type: 'A', weight: 2, next: 17, followUpText: ["Qui n'en rêve pas ?"] },
+            { id: 3, text: "Une virée en bateau le long de l'Erdre !", type: 'A', type2: 'R', weight: 1, next: 17, followUpText: ["De quoi faire de jolies photos avec Marine et Louise !"] },
+            { id: 4, text: "Un resto chic", type: 'A', weight: 2, next: 17, followUpText: ["Occasion parfaite de sortir ma meilleure tenue et de faire tourner la tête de mon bien-aimé hehe"] },
+        ]
+    },
+
+    
     // 17 (Q5_2D)
     {
         speaker: 'bot',
