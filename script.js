@@ -93,7 +93,7 @@ const dialogue = [
     // 2 (2)
     {
         speaker: 'bot',
-        text: ['Heeeey ! J'ai entendu dire qu'aujourd'hui était une journée spéciale pour toi :D'],
+        text: ['Coucou Camille ! J'ai entendu dire qu'aujourd'hui était une journée spéciale pour toi :D'],
         choices: [
             { id: 1, text: 'Désolée, mauvais numéro...', type: 'B', weight: 2, next: 3, followUpText: [] },
             { id: 2, text: 'Et vous êtes ??', type: 'S', weight: 2, next: 4, followUpText: [] },
@@ -104,11 +104,11 @@ const dialogue = [
     // 3 (3_1)
     {
         speaker: 'bot',
-        text: ['Mauvais numéro ?', "Mais c'est clairement toi qui fait appel à moi, voyons !!"],
+        text: ['Mauvais numéro ?', "Je connais aucune autre Camille perso !", "En plus c'est toi qui fait appel à moi !!"],
         choices: [
             { id: 1, text: 'Faire appel à toi ??', type: 'G', weight: 1, next: 6, followUpText: [] },
             { id: 2, text: 'Oui oui, et les vaches ça vole...', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'Mais du coup t'es qui ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 3, text: 'Okay mais du coup t'es qui ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
     // 4 (3_2)
@@ -118,7 +118,7 @@ const dialogue = [
         choices: [
             { id: 1, text: 'Faire appel à toi ?', type: 'G', weight: 1, next: 6, followUpText: [] },
             { id: 2, text: 'Mais de quoi tu parles...', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'Nan mais sérieux, t'es qui ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 3, text: 'Et donc t'es qui au juste ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
     // 5 (3_3)
@@ -128,7 +128,7 @@ const dialogue = [
         choices: [
             { id: 1, text: 'Faire appel à toi ?', type: 'G', weight: 1, next: 6, followUpText: [] },
             { id: 2, text: 'Mais de quoi tu parles...', type: 'P', weight: 1, next: 6, followUpText: [] },
-            { id: 3, text: 'Vous êtes qui même ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
+            { id: 3, text: 'T'es qui même ?!', type: 'D', weight: 1, next: 6, followUpText: [] }
         ]
     },
 
@@ -273,6 +273,7 @@ const dialogue = [
         ]
     },
 
+    
     // 18 (Q6)
     {
         speaker: "bot",
