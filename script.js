@@ -135,7 +135,7 @@ const dialogue = [
     // 6 (4)
     {
         speaker: 'bot',
-        text: ["Okay okay, laisse-moi tout t'expliquer !", "Moi c'est Bibi, une birthday bee !", "Et mon rôle aujourd'hui c'est d'animer un peu cette journée si spéciale pour toi !!"],
+        text: ["Laisse-moi tout t'expliquer !", "Moi c'est Bibi, une birthday bee !", "Et mon rôle aujourd'hui c'est d'animer un peu cette journée si spéciale pour toi !!"],
         choices: [
             { id: 1, text: "Et depuis quand les abeilles animent des anniversaires même...", type: 'P', weight: 2, next: 7, followUpText: [] },
             { id: 2, text: "Okay Bibi, et comment tu comptes t'y prendre ?", type: 'G', weight: 2, next: 8, followUpText: [] },
@@ -154,24 +154,24 @@ const dialogue = [
     },
 
 
-    // 8 (5_2, 5_3)
+    // 8 (5_2)
     {
         speaker: 'bot',
-        text: ["Straight to the point, I see", "I'm here to ask you 12 questions", "Cupid's duty! We do this once a year!"],
+        text: ["Avec un petit quiz tout simple !", "J'aurais 12 questions à te poser", "Partante ?"],
         choices: [
-            { id: 1, text: "Ok", type: 'R', weight: 1, next: 10, followUpText: [] },
-            { id: 2, text: "Sounds fun, I'm down!", type: 'A', weight: 1, next: 10, followUpText: [] },
+            { id: 1, text: "Allez, pourquoi pas", type: 'R', weight: 1, next: 10, followUpText: [] },
+            { id: 2, text: "J'avoue être un peu curieuse maintenant, on peut démarrer oui", type: 'A', weight: 1, next: 10, followUpText: [] },
         ]
     },
 
 
-    // 9 (6)
+    // 9 (5_3)
     {
         speaker: 'bot',
-        text: ["There will be 12 questions!", "Ready?"],
+        text: ["C'est que Madame est une busy bee aussi !", "J'aurais juste 12 questions à te poser", "Partante ?"],
         choices: [
-            { id: 1, text: "Alright, ask away!", type: 'O', weight: 0, next: 10, followUpText: [] },
-            { id: 2, text: "I was born ready!", type: 'O', weight: 0, next: 10, followUpText: [] },
+            { id: 1, text: "Allez, pourquoi pas", type: 'O', weight: 0, next: 10, followUpText: [] },
+            { id: 2, text: "Et z'est bartiiiii", type: 'O', weight: 0, next: 10, followUpText: [] },
             { id: 3, text: "Let's gooo", type: 'O', weight: 0, next: 10, followUpText: [] },
         ]
     },
