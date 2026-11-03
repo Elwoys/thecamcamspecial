@@ -1,6 +1,3 @@
-
-/*https://github.com/IseeJ
-Please don't use my code without permission!*/
 document.addEventListener("DOMContentLoaded", function () {
     let resultPage = document.getElementById("result-page");
 
