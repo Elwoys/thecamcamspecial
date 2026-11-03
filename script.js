@@ -139,7 +139,7 @@ const dialogue = [
         choices: [
             { id: 1, text: "Et depuis quand les abeilles animent des anniversaires même...", type: 'P', weight: 2, next: 7, followUpText: [] },
             { id: 2, text: "Okay Bibi, et comment tu comptes t'y prendre ?", type: 'G', weight: 2, next: 8, followUpText: [] },
-            { id: 3, text: "On peut abréger là ? Ca devient long...", type: 'D', weight: 2, next: 9, followUpText: [] },
+            { id: 3, text: "On peut abréger là ? Ca devient long...", type: 'D', weight: 2, next: 8, followUpText: [] },
 
         ]
     },
