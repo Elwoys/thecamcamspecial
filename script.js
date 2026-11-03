@@ -149,7 +149,7 @@ const dialogue = [
         text: ["Ah bah les temps sont durs pour tout le monde, hein", "Moi aussi j'ai une famille à nourrir !", "(Et des achats compulsifs à faire, mais chut)", "Enfin bref, j'aurais 12 questions à te poser", "Partante ?"],
         choices: [
             { id: 1, text: "Si tu insistes...", type: 'R', weight: 1, next: 10, followUpText: [] },
-            { id: 2, text: "Tu me fais un peu pitié donc j'accepte.", type: 'A', weight: 1, next: 10, followUpText: ["J'espère pour toi que t'es bien payé pour le coup"] },
+            { id: 2, text: "Tu me fais un peu pitié donc j'accepte.", type: 'A', weight: 1, next: 10, followUpText: ["J'espère pour toi que t'es bien payée pour le coup"] },
         ]
     },
 
@@ -203,16 +203,16 @@ const dialogue = [
     },
 
 
-    // 12 (Q3)
+    // 12 (Q2_3,5)
     {
         speaker: 'bot',
-        text: ["3) What if you have a crush right now, what's next?"],
+        text: ["...Etonnante réponse venant de toi !", "Sinon, 2) Qui souhaites-tu avoir à tes côtés en cette journée si spéciale?"],
         choices: [
-            { id: 1, text: "Tell them!", type: 'B', weight: 2, next: 14, followUpText: ["I'll just message/call them and talk it out","What's the worst that could happen?"] },
-            { id: 2, text: "Keep talking to them!", type: 'S', weight: 2, next: 14, followUpText: ["Consistency is the key!"] },
-            { id: 3, text: "Do absolutely NOTHING", type: 'W', weight: 1, next: 13, followUpText: ["I will never ever let them know..."] },
-            { id: 4, text: "Avoid them", type: 'W', weight: 2, next: 13, followUpText: ["I will run if I have to"] },
-            { id: 5, text: "Make subtle moves", type: 'B', type2: 'S', weight: 1, next: 14, followUpText: ["Drops small hints, just don't make it too obvious!"] },
+            { id: 1, text: "Ma famille", type: 'W', weight: 1, next: 13, followUpText: [] },
+            { id: 2, text: "Mon amoureux :)", type: 'B', weight: 2, next: 13, followUpText: [] },
+            { id: 3, text: "Mon cercle restreint ! Juste les quelques personnes qui comptent vraiment pour moi", type: 'S', weight: 2, next: 13, followUpText: [] },
+            { id: 4, text: "J'ai envie de profiter de ma propre compagnie aujourd'hui", type: 'W', weight: 2, next: 13, followUpText: [] },
+            { id: 5, text: "Toutes les personnes dont j'apprécie la compagnie, plus on est de fous, plus on rit !!", type: 'B', type2: 'S', weight: 1, next: 13, followUpText: [] },
         ]
     },
     // 13 (Q4_3,4)
