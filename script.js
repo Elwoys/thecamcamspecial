@@ -114,7 +114,7 @@ const dialogue = [
     // 4 (3_2)
     {
         speaker: 'bot',
-        text: ["Moi ? Mais tu me connais déjà !", "C'est toi qui viens de faire appel à moi", "C'est bien toi qui a voulu faire ce test aujourd'hui, non ?"],
+        text: ["Moi ? Mais tu me connais déjà enfin !", "C'est toi qui a fait appel à moi", "C'est bien toi qui a voulu faire ce test aujourd'hui, non ?"],
         choices: [
             { id: 1, text: "Faire appel à toi ?", type: 'G', weight: 1, next: 6, followUpText: [] },
             { id: 2, text: "Mais de quoi tu parles...", type: 'P', weight: 1, next: 6, followUpText: [] },
@@ -179,27 +179,27 @@ const dialogue = [
     // 10 (Q1)
     {
         speaker: 'bot',
-        text: ["Let's start with the basics", "1) What is 'love' to you?"],
+        text: ["How...romantic", "Sooo, 2) Who do you usually have a crush on?"],
         choices: [
-            { id: 1, text: "a safe space, to be ourselves and to simply be together", type: 'G', weight: 2, next: 11, followUpText: [] },
-            { id: 2, text: "an adventure, filled with fun and unforgettable memories", type: 'P', weight: 2, next: 11, followUpText: [] },
-            { id: 3, text: "a commitment, being there for each other no matter what", type: 'D', weight: 2, next: 11, followUpText: [] },
-            { id: 4, text: "a beautiful friendship, built on trust and understanding", type: 'G', weight: 2, next: 11, followUpText: [] },
-            { id: 5, text: "[insert that person's name]", type: 'D', weight: 2, next: 11, followUpText: [] },
-            { id: 6, text: "a complex neurobiological process involving hormones and brain activity", type: 'P', weight: 2, next: 11, followUpText: [] },
+            { id: 1, text: "coworker / classmate", type: 'W', weight: 1, next: 11, followUpText: ["I mean, I see them everyday!"] },
+            { id: 2, text: "hard to say, it's often love at first sight", type: 'B', weight: 2, next: 11, followUpText: [] },
+            { id: 3, text: "Someone I've been close to for a while, like a best friend", type: 'S', weight: 2, next: 11, followUpText: [] },
+            { id: 4, text: "I've never really have a crush on anyone...", type: 'W', weight: 2, next: 11, followUpText: ["unless celebrity crushes count!"] },
+            { id: 5, text: "I don't have a type. I just know when it feels right", type: 'B', type2: 'S', weight: 1, next: 11, followUpText: [] },
         ]
     },
 
     // 11 (Q2)
     {
         speaker: 'bot',
-        text: ["How...romantic", "Sooo, 2) Who do you usually have a crush on?"],
+        text: ["Let's start with the basics", "1) What is 'love' to you?"],
         choices: [
-            { id: 1, text: "coworker / classmate", type: 'W', weight: 1, next: 12, followUpText: ["I mean, I see them everyday!"] },
-            { id: 2, text: "hard to say, it's often love at first sight", type: 'B', weight: 2, next: 12, followUpText: [] },
-            { id: 3, text: "Someone I've been close to for a while, like a best friend", type: 'S', weight: 2, next: 12, followUpText: [] },
-            { id: 4, text: "I've never really have a crush on anyone...", type: 'W', weight: 2, next: 12, followUpText: ["unless celebrity crushes count!"] },
-            { id: 5, text: "I don't have a type. I just know when it feels right", type: 'B', type2: 'S', weight: 1, next: 12, followUpText: [] },
+            { id: 1, text: "a safe space, to be ourselves and to simply be together", type: 'G', weight: 2, next: 12, followUpText: [] },
+            { id: 2, text: "an adventure, filled with fun and unforgettable memories", type: 'P', weight: 2, next: 12, followUpText: [] },
+            { id: 3, text: "a commitment, being there for each other no matter what", type: 'D', weight: 2, next: 12, followUpText: [] },
+            { id: 4, text: "a beautiful friendship, built on trust and understanding", type: 'G', weight: 2, next: 12, followUpText: [] },
+            { id: 5, text: "[insert that person's name]", type: 'D', weight: 2, next: 12, followUpText: [] },
+            { id: 6, text: "a complex neurobiological process involving hormones and brain activity", type: 'P', weight: 2, next: 12, followUpText: [] },
         ]
     },
 
