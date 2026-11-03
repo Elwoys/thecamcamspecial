@@ -178,14 +178,14 @@ const dialogue = [
     // 10 (Q1)
     {
         speaker: 'bot',
-        text: ["Alors commençons avec une question simple !", "1) What is 'love' to you?"],
+        text: ["Alors commençons avec une question un peu générale !", "1) Que représente un anniversaire pour toi ?"],
         choices: [
-            { id: 1, text: "a safe space, to be ourselves and to simply be together", type: 'G', weight: 2, next: 11, followUpText: [] },
-            { id: 2, text: "an adventure, filled with fun and unforgettable memories", type: 'P', weight: 2, next: 11, followUpText: [] },
-            { id: 3, text: "a commitment, being there for each other no matter what", type: 'D', weight: 2, next: 11, followUpText: [] },
+            { id: 1, text: "Un moment où je peux rassembler tous les êtres qui me sont chers au même endroit", type: 'G', weight: 2, next: 11, followUpText: [] },
+            { id: 2, text: "Une occasion de faire la fête !", type: 'P', weight: 2, next: 11, followUpText: [] },
+            { id: 3, text: "Un jour comme les autres, juste un peu plus symbolique", type: 'D', weight: 2, next: 11, followUpText: [] },
             { id: 4, text: "a beautiful friendship, built on trust and understanding", type: 'G', weight: 2, next: 11, followUpText: [] },
-            { id: 5, text: "[insert that person's name]", type: 'D', weight: 2, next: 11, followUpText: [] },
-            { id: 6, text: "a complex neurobiological process involving hormones and brain activity", type: 'P', weight: 2, next: 11, followUpText: [] },
+            { id: 5, text: "Une journée où je peux un peu plus penser à moi-même", type: 'D', weight: 2, next: 11, followUpText: [] },
+            { id: 6, text: "Un pas de plus vers le décès", type: 'P', weight: 2, next: 11, followUpText: [] },
         ]
     },
 
