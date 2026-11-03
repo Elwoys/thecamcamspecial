@@ -87,7 +87,7 @@ const dialogue = [
         speaker: 'bot',
         text: ["*Êtes-vous sûre ? Cela pourrait être important*"],
         choices: [
-            { id: 1, text: 'FINE I\'ll open it', type: 'O', weight: 1, next: 2, followUpText: [] },
+            { id: 1, text: "Bon okay, je vais accepter...", type: 'O', weight: 1, next: 2, followUpText: [] },
         ]
     },
     // 2 (2)
@@ -185,17 +185,17 @@ const dialogue = [
             { id: 2, text: "Une occasion de faire la fête !", type: 'P', weight: 2, next: 11, followUpText: [] },
             { id: 3, text: "Un jour comme les autres, juste un peu plus symbolique", type: 'D', weight: 2, next: 12, followUpText: [] },
             { id: 4, text: "Une journée où je peux un peu plus penser à moi-même", type: 'D', weight: 2, next: 11, followUpText: [] },
-            { id: 5, text: "Un pas de plus vers le décès", type: 'P', weight: 2, next: 11, followUpText: [] },
+            { id: 5, text: "Un pas de plus vers le décès", type: 'P', weight: 2, next: 12, followUpText: [] },
         ]
     },
 
     // 11 (Q2_1,2,4)
     {
         speaker: 'bot',
-        text: ["Haha je pense la même chose !", "2) Qui souhaites-tu avoir à tes côtés en cette journée si spéciale?"],
+        text: ["Ooh, je pense la même chose !", "2) Et qui souhaites-tu avoir à tes côtés en cette journée si spéciale?"],
         choices: [
             { id: 1, text: "Ma famille", type: 'W', weight: 1, next: 13, followUpText: [] },
-            { id: 2, text: "Mon amoureux :)", type: 'B', weight: 2, next: 13, followUpText: [] },
+            { id: 2, text: "Mon amoureux c:", type: 'B', weight: 2, next: 13, followUpText: [] },
             { id: 3, text: "Mon cercle restreint ! Juste les quelques personnes qui comptent vraiment pour moi", type: 'S', weight: 2, next: 13, followUpText: [] },
             { id: 4, text: "J'ai envie de profiter de ma propre compagnie aujourd'hui", type: 'W', weight: 2, next: 13, followUpText: [] },
             { id: 5, text: "Toutes les personnes dont j'apprécie la compagnie, plus on est de fous, plus on rit !!", type: 'B', type2: 'S', weight: 1, next: 13, followUpText: [] },
