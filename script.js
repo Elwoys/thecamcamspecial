@@ -178,27 +178,26 @@ const dialogue = [
     // 10 (Q1)
     {
         speaker: 'bot',
-        text: ["Alors commençons avec une question un peu générale !", "1) Que représente un anniversaire pour toi ?"],
+        text: ["Yay !", "Alors commençons avec la 1ère question !", "1) Qu'est-ce qu'un anniversaire pour toi ?"],
         choices: [
             { id: 1, text: "Un moment où je peux rassembler tous les êtres qui me sont chers au même endroit", type: 'G', weight: 2, next: 11, followUpText: [] },
             { id: 2, text: "Une occasion de faire la fête !", type: 'P', weight: 2, next: 11, followUpText: [] },
             { id: 3, text: "Un jour comme les autres, juste un peu plus symbolique", type: 'D', weight: 2, next: 11, followUpText: [] },
-            { id: 4, text: "a beautiful friendship, built on trust and understanding", type: 'G', weight: 2, next: 11, followUpText: [] },
-            { id: 5, text: "Une journée où je peux un peu plus penser à moi-même", type: 'D', weight: 2, next: 11, followUpText: [] },
-            { id: 6, text: "Un pas de plus vers le décès", type: 'P', weight: 2, next: 11, followUpText: [] },
+            { id: 4, text: "Une journée où je peux un peu plus penser à moi-même", type: 'D', weight: 2, next: 11, followUpText: [] },
+            { id: 5, text: "Un pas de plus vers le décès", type: 'P', weight: 2, next: 11, followUpText: [] },
         ]
     },
 
     // 11 (Q2)
     {
         speaker: 'bot',
-        text: ["How...romantic", "Sooo, 2) Who do you usually have a crush on?"],
+        text: ["...Intéressant !", "2ème question, 2) Qui souhaites-tu avoir à tes côtés en cette journée si spéciale?"],
         choices: [
-            { id: 1, text: "coworker / classmate", type: 'W', weight: 1, next: 12, followUpText: ["I mean, I see them everyday!"] },
-            { id: 2, text: "hard to say, it's often love at first sight", type: 'B', weight: 2, next: 12, followUpText: [] },
-            { id: 3, text: "Someone I've been close to for a while, like a best friend", type: 'S', weight: 2, next: 12, followUpText: [] },
-            { id: 4, text: "I've never really have a crush on anyone...", type: 'W', weight: 2, next: 12, followUpText: ["unless celebrity crushes count!"] },
-            { id: 5, text: "I don't have a type. I just know when it feels right", type: 'B', type2: 'S', weight: 1, next: 12, followUpText: [] },
+            { id: 1, text: "Ma famille", type: 'W', weight: 1, next: 12, followUpText: ["I mean, I see them everyday!"] },
+            { id: 2, text: "Juste mon amoureux :)", type: 'B', weight: 2, next: 12, followUpText: [] },
+            { id: 3, text: "Mon cercle restreint ! Juste les quelques personnes qui comptent vraiment pour moi", type: 'S', weight: 2, next: 12, followUpText: [] },
+            { id: 4, text: "J'ai envie de profiter de ma propre compagnie aujourd'hui", type: 'W', weight: 2, next: 12, followUpText: [] },
+            { id: 5, text: "Toutes les personnes dont j'apprécie la compagnie, plus on est de fous, plus on rit !!", type: 'B', type2: 'S', weight: 1, next: 12, followUpText: [] },
         ]
     },
 
