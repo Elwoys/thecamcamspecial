@@ -124,7 +124,7 @@ const dialogue = [
     // 5 (3_3)
     {
         speaker: 'bot',
-        text: ["Hey, ne m'ignore pas !", "Je sais que tu as vu mes messages !!", "C'est toi qui a fait appel à moi pourtant :("],
+        text: ["Eh, ne m'ignore pas !", "Je sais que tu as vu mes messages !!", "C'est toi qui a fait appel à moi pourtant :("],
         choices: [
             { id: 1, text: 'Faire appel à toi ?', type: 'G', weight: 1, next: 6, followUpText: [] },
             { id: 2, text: 'Mais de quoi tu parles...', type: 'P', weight: 1, next: 6, followUpText: [] },
@@ -138,7 +138,7 @@ const dialogue = [
         text: ["Ok ok, laisse-moi tout t'expliquer !", "Moi c'est Bibi, une birthday bee !", "Et mon rôle aujourd'hui c'est d'animer un peu cette journée si spéciale pour toi !!"],
         choices: [
             { id: 1, text: "Et depuis quand les abeilles animent des anniversaires même...", type: 'P', weight: 2, next: 7, followUpText: [] },
-            { id: 2, text: "Ok Bibi, et comment tu vas t'y prendre ?", type: 'G', weight: 2, next: 8, followUpText: [] },
+            { id: 2, text: "Okay Bibi, et comment tu comptes t'y prendre ?", type: 'G', weight: 2, next: 8, followUpText: [] },
             { id: 3, text: "On peut abréger là ? Ca devient long...", type: 'D', weight: 2, next: 9, followUpText: [] },
 
         ]
@@ -156,7 +156,7 @@ const dialogue = [
     // 8 (5_2)
     {
         speaker: 'bot',
-        text: ["Avec un petit quiz tout simple !", "J'ai 12 questions à te poser", "Partante ?"],
+        text: ["Avec un petit quiz tout simple !", "J'aurais 12 questions à te poser", "Partante ?"],
         choices: [
             { id: 1, text: "Allez, pourquoi pas", type: 'R', weight: 1, next: 10, followUpText: [] },
             { id: 2, text: "J'avoue être un peu curieuse maintenant, on peut démarrer oui", type: 'A', weight: 1, next: 10, followUpText: [] },
@@ -167,10 +167,10 @@ const dialogue = [
     // 9 (5_3)
     {
         speaker: 'bot',
-        text: ["C'est que Madame est une busy bee !", "J'aurai juste 12 questions à te poser", "Partante ?"],
+        text: ["C'est que Madame est une busy bee aussi !", "J'aurais juste 12 questions à te poser", "Partante ?"],
         choices: [
             { id: 1, text: "Allez, pourquoi pas", type: 'O', weight: 0, next: 10, followUpText: [] },
-            { id: 2, text: "I was born ready!", type: 'O', weight: 0, next: 10, followUpText: [] },
+            { id: 2, text: "Et z'est bartiiiii", type: 'O', weight: 0, next: 10, followUpText: [] },
             { id: 3, text: "Let's gooo", type: 'O', weight: 0, next: 10, followUpText: [] },
         ]
     },
@@ -178,7 +178,7 @@ const dialogue = [
     // 10 (Q1)
     {
         speaker: 'bot',
-        text: ["Let's start with the basics", "1) What is 'love' to you?"],
+        text: ["Alors commençons avec une question simple !", "1) What is 'love' to you?"],
         choices: [
             { id: 1, text: "a safe space, to be ourselves and to simply be together", type: 'G', weight: 2, next: 11, followUpText: [] },
             { id: 2, text: "an adventure, filled with fun and unforgettable memories", type: 'P', weight: 2, next: 11, followUpText: [] },
