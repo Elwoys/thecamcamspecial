@@ -219,7 +219,7 @@ const dialogue = [
     // 13 (Q3)
     {
         speaker: 'bot',
-        text: ["Parfait !", "4) Comment décrirais-tu le type de célébration que tu souhaiterais avoir ?"],
+        text: ["Parfait !", "3) Comment décrirais-tu le type de célébration que tu souhaiterais avoir ?"],
         choices: [
             { id: 1, text: "Simple et réconfortant, juste quelque chose qui me ferait passer un bon moment avec mes gens préférés !", type: 'G', weight: 2, next: 14, followUpText: [] },
             { id: 2, text: "Fun et festif, je déborde d'énergie !", type: 'P', weight: 2, next: 15, followUpText: [] },
@@ -228,7 +228,7 @@ const dialogue = [
     },
 
     
-    // 14 (Q3_1)
+    // 14 (Q4_1)
     {
         speaker: 'bot',
         text: ["C'est ce que j'aurais choisi aussi !" "4) Et qu'est-ce que tu voudrais faire plus exactement ?"],
@@ -240,7 +240,7 @@ const dialogue = [
         ]
     },
 
-    // 15 (Q3_2)
+    // 15 (Q4_2)
     {
         speaker: 'bot',
         text: ["C'est une bonne chose !", "4) Et qu'est-ce que tu voudrais faire plus exactement ?"],
@@ -251,7 +251,7 @@ const dialogue = [
             { id: 4, text: "Home - cooking our favorite dish", type: 'R', weight: 2, next: 17, followUpText: ["A way to one's heart is through their stomach!"] },
         ]
     },
-    // 16 (Q3_3)
+    // 16 (Q4_3)
     {
         speaker: 'bot',
         text: ["Quelque chose qui change hein ? J'adore !", "4) Et qu'est-ce que tu voudrais faire plus exactement ?"],
@@ -262,10 +262,10 @@ const dialogue = [
             { id: 4, text: "Un resto chic", type: 'A', weight: 2, next: 17, followUpText: ["Occasion parfaite de sortir ma meilleure tenue et de faire tourner la tête de mon bien-aimé hehe"] },
         ]
     },
-    // 17 (Q4)
+    // 17 (Q5)
     {
         speaker: 'bot',
-        text: ["Un très bon programme !", "4) Maintenant, quel type de cadeau te ferait le plus plaisir ?"],
+        text: ["Un très bon programme !", "5) Maintenant, quel type de cadeau te ferait le plus plaisir ?"],
         choices: [
             { id: 1, text: "Quelque chose de sincère et fait avec amour !", type: 'R', weight: 2, next: 18, followUpText: [] },
             { id: 2, text: "Un cadeau classique mais choisi avec goût !", type: 'A', weight: 2, next: 19, followUpText: [] },
@@ -274,30 +274,30 @@ const dialogue = [
     },
 
     
-    // 18 (Q5)
+    // 18 (Q6_1)
     {
         speaker: "bot",
-        text: ["Un cadeau personnalisé ? J'adore !", "5) Par exemple ?"],
+        text: ["Un cadeau personnalisé ? J'adore !", "6) Par exemple ?"],
         choices: [
             { id: 1, text: "Un album photo !", type: 'G', weight: 2, next: 21, followUpText: [] },
-            { id: 2, text: "Quelque chose fait à la main !", type: 'P', weight: 2, next: 21, followUpText: ["un jeu de société sur-mesure ou même un site web par exemple haha *wink wink*"] },
+            { id: 2, text: "Quelque chose fait à la main !", type: 'P', weight: 2, next: 21, followUpText: ["un bijou, un jeu de société sur-mesure ou même un site web par exemple haha *wink wink*"] },
             { id: 3, text: "Une jolie lettre", type: 'G', weight: 2, next: 21, followUpText: ["Pleine de mots touchants à l'intérieur !"] },
         ]
     },
-    // 19 (Q5)
+    // 19 (Q6_2)
     {
         speaker: "bot",
-        text: ["5) Par exemple ?"],
+        text: ["6) Par exemple ?"],
         choices: [
             { id: 1, text: "Une peluche jellycat !", type: "B", weight: 2, next: 21, followUpText: ["Attention à bien regarder si je n'ai pas déjà la peluche dans ma collection haha"] },
             { id: 2, text: "Un bouquet avec mes fleurs préférées", type: "S", weight: 2, next: 21, followUpText: ["Qui n'aime pas recevoir de jolies fleurs ?"] },
-            { id: 3, text: "Un joli bijou", type: "W", weight: 2, next: 21, followUpText: [] },
+            { id: 3, text: "Une babiole avec une histoire !", type: "W", weight: 2, next: 21, followUpText: [] },
         ]
     },
-    // 20 (Q5)
+    // 20 (Q6_3)
     {
         speaker: "bot",
-        text: ["Un souvenir plutôt qu'un objet, bonne idée !", "5) Par exemple ?"],
+        text: ["Un moment plutôt qu'un objet, bonne idée !", "6) Par exemple ?"],
         choices: [
             { id: 1, text: "Une matinée spa !", type: "B", weight: 2, next: 21, followUpText: ["De quoi bien décompresser"] },
             { id: 2, text: "Une après-midi dans un atelier créatif !", type: "S", weight: 2, next: 21, followUpText: ["De quoi laisser parler ma fibre créative !"] },
@@ -306,20 +306,20 @@ const dialogue = [
     },
     
 
-    // 25 (Q8)
+    // 21 (Q7)
     {
         speaker: "bot",
-        text: ["Je prends note !", "7) D'ailleurs, j'ai oublié de te le demander tout à l'heure, mais comment tu comptes t'habiller aujourd'hui ?"],
+        text: ["Je prends note !", "Ensuite, quoi de mieux pour animer cette journée qu'un peu de musique ?", "7) Choisis un genre musical pour rythmer ta journée !"],
         choices: [
-            { id: 1, text: "Classy and timeless", type: "D", weight: 2, next: 26, followUpText: [] },
-            { id: 2, text: "Stylish and cool", type: "P", weight: 1, next: 26, followUpText: [] },
-            { id: 3, text: "Simple and comfortable", type: "G", weight: 2, next: 26, followUpText: [] },
-            { id: 4, text: "Anything and my crocs", type: "P", weight: 2, next: 26, followUpText: [] },
-            { id: 5, text: "Something I rock with confidence", type: "G", type2: "D", weight: 1, next: 26, followUpText: [] },
+            { id: 1, text: "De la pop anglophone !", type: "D", type2: "P", weight: 2, next: 22, followUpText: ["Sabrina Carpenter, Taylor Swift, Benson Boone", "Des choix simples, mais toujours bons !"] },
+            { id: 2, text: "De la variété francophone", type: "P", weight: 1, next: 22, followUpText: ["De quoi faire un karakoé en voiture !"] },
+            { id: 3, text: "Une bande-son iconique !", type: "G", weight: 2, next: 22, followUpText: ["Siri, joue le thème de la Soupe aux choux !"] },
+            { id: 4, text: "De la musique classique", type: "P", weight: 2, next: 22, followUpText: ["En fin de journée, pour finir en douceur"] },
+            { id: 5, text: "Des hits latinos !", type: "G", weight: 1, next: 22, followUpText: ["Parfait pour se déhancher !"] },
         ]
     },
 
-    // 26 (Q9)
+    // 22 (Q8)
     {
         speaker: "bot",
         text: ["9) What's one item you would definitely bring on a date?"],
@@ -334,7 +334,7 @@ const dialogue = [
     },
 
 
-    // 27 (Q10)
+    // 23 (Q9)
     {
         speaker: "bot",
         text: ["Wise choice! Now, enough with your (hypothetical) love scenarios", "Let's get to know YOU more!", "10) Who are you in a friend group?"],
@@ -348,7 +348,7 @@ const dialogue = [
         ]
     },
 
-    // 28 (Q11_)
+    // 24 (Q10)
     {
         speaker: 'bot',
         text: ["Ooooh taken, I see", "11) Any words of advices on relationship?"],
@@ -359,7 +359,7 @@ const dialogue = [
         ]
     },
 
-    // 29 (Q11_2,3)
+    // 25 (Q11_2,3)
     {
         speaker: 'bot',
         text: ["Ooooh, looks like someone's playing Cupid!", "11) Any wisdom to share, love expert?"],
@@ -370,7 +370,7 @@ const dialogue = [
         ]
     },
 
-    // 30 (Q11_3,4)
+    // 26 (Q11_3,4)
     {
         speaker: 'bot',
         text: ["Okayy, I bet you're cool","Now, let's say you meet your past self","11) What love advice would you give them?"],
@@ -381,7 +381,7 @@ const dialogue = [
         ]
     },
 
-    // 31 (Q11...)
+    // 27 (Q11...)
     {
         speaker: 'bot',
         text: ["The cool one, I see","Now, let's say you meet your past self","11) What love advice would you give them?"],
@@ -392,7 +392,7 @@ const dialogue = [
         ]
     },
 
-    // 32 (Q11...)
+    // 28 (Q11...)
     {
         speaker: 'bot',
         text: ["Of course you have friends! Count me in!", "And hey, you are your own best friend—ever heard that saying?", "Now, let's say you meet your past self...", "11) What love advice would you give them?"],
@@ -403,7 +403,7 @@ const dialogue = [
         ]
     },
 
-    // 33 (Q12)
+    // 29 (Q12)
     {
         speaker: 'bot',
         text: ["Down to the last question, then","12) Anything you'd like to wish for?"],
@@ -416,7 +416,7 @@ const dialogue = [
         ]
     },
 
-    // 34
+    // 30
     {
         speaker: 'bot',
         text: ["Noted, that shall be served","oh, Just curious, what's your plan today?","Apart from playing this silly quiz, of course"],
@@ -430,7 +430,7 @@ const dialogue = [
     },
     
 
-    // 35 last
+    // 31 last
     {
         speaker: 'bot',
         text: ["lololl have fun!","Ready to see your result?"],
