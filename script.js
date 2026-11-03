@@ -93,7 +93,7 @@ const dialogue = [
     // 2 (2)
     {
         speaker: 'bot',
-        text: ['Hey hey hey! Happy Valentine\'s Day!'],
+        text: ['Coucou Camille ! J'ai entendu dire qu'aujourd'hui était une journée spéciale pour toi !'],
         choices: [
             { id: 1, text: 'I think you got the wrong number', type: 'B', weight: 2, next: 3, followUpText: [] },
             { id: 2, text: 'Thanks, but who r u?', type: 'S', weight: 2, next: 4, followUpText: [] },
